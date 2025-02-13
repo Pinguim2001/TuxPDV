@@ -68,7 +68,7 @@
             // 
             // btnEnviarEmail
             // 
-            this.btnEnviarEmail.Location = new System.Drawing.Point(336, 136);
+            this.btnEnviarEmail.Location = new System.Drawing.Point(336, 156);
             this.btnEnviarEmail.Name = "btnEnviarEmail";
             this.btnEnviarEmail.Size = new System.Drawing.Size(94, 35);
             this.btnEnviarEmail.TabIndex = 3;
