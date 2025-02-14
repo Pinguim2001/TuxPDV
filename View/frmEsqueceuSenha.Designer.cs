@@ -36,6 +36,7 @@
             this.lblTimer = new System.Windows.Forms.Label();
             this.txtCodRecup = new System.Windows.Forms.TextBox();
             this.btnVerificaCode = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -103,11 +104,22 @@
             this.btnVerificaCode.UseVisualStyleBackColor = true;
             this.btnVerificaCode.Click += new System.EventHandler(this.btnVerificaCode_Click);
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Location = new System.Drawing.Point(661, 341);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(94, 35);
+            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // frmEsqueceuSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 388);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnVerificaCode);
             this.Controls.Add(this.txtCodRecup);
             this.Controls.Add(this.lblTimer);
@@ -134,5 +146,6 @@
         private System.Windows.Forms.Label lblTimer;
         private System.Windows.Forms.TextBox txtCodRecup;
         private System.Windows.Forms.Button btnVerificaCode;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

@@ -7,6 +7,7 @@ using System.Net.Mail;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TuxPDV.Service
 {
@@ -23,30 +24,30 @@ namespace TuxPDV.Service
 
             try
             {
-                SmtpClient smtp = new SmtpClient("smtp.zimbra.orquidea.com.br")
-                {
-                    Port = 587,
-                    EnableSsl = true,
-                    UseDefaultCredentials = true,
-                    DeliveryMethod = SmtpDeliveryMethod.Network
-                };
+                MailMessage mailMessage = new MailMessage();
+                mailMessage.From = new MailAddress("NAORESPONDA@tuxpdv.com.br");
+                mailMessage.To.Add(_userEmail);
+                mailMessage.Subject = subject;
+                mailMessage.Body = body;
 
-                MailMessage message = new MailMessage
-                {
-                    From = new MailAddress("alyssondornelles123@hotmail.com"),
-                    Subject = subject,
-                    Body = body,
-                    IsBodyHtml = false
-                };
+                SmtpClient smtp = new SmtpClient("smtp.orquidea.com.br", 53);
+                smtp.EnableSsl = true;
+                smtp.UseDefaultCredentials = false;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
 
-                message.To.Add(_userEmail);
+                smtp.Send(mailMessage);
 
-                smtp.Send(message);
-                Console.WriteLine("E-mail enviado com sucesso!");
+                MessageBox.Show("Enviado com sucesso!!!",
+                               "SUCESSO",
+                               MessageBoxButtons.OK,
+                               MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Erro ao enviar e-mail: " + ex.Message);
+                MessageBox.Show(ex.Message,
+                                "Erro ao enviar e-mail",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
             }
         }
 

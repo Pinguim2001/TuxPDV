@@ -35,7 +35,7 @@ namespace TuxPDV.View
 
             if (string.IsNullOrEmpty(userEmail))
             {
-                MessageBox.Show("Por favor, Isira um e-mail");
+                MessageBox.Show("Por favor, Insira um e-mail");
                 return;
             }
 
@@ -75,7 +75,10 @@ namespace TuxPDV.View
 
             if (string.IsNullOrEmpty(userCode))
             {
-                MessageBox.Show("Por favor insira o código recebido!");
+                MessageBox.Show("Por favor insira o código recebido!",
+                                "ATENÇÃO",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
                 return;
             }
 
@@ -86,6 +89,10 @@ namespace TuxPDV.View
             }
 
 
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
 
         }
     }
