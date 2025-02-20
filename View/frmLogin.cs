@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TuxPDV.Enum;
+using TuxPDV.Service;
 
 namespace TuxPDV.View
 {
@@ -25,7 +27,22 @@ namespace TuxPDV.View
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
+            UsuarioService usuService = new UsuarioService();
 
+            string login = txtLogin.Text;
+            string password = txtPassword.Text;
+
+            Boolean aut = usuService.autUser(login, password);
+
+            if (!(aut))
+            {
+                txtLogin.Clear();
+                txtPassword.Clear();
+                txtLogin.Focus();
+                return;
+            }
+
+            TipoUsuario type = usuService.getTypeUser(login);
         }
     }
 }
