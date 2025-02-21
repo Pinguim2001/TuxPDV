@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,6 +44,11 @@ namespace TuxPDV.View
             }
 
             TipoUsuario type = usuService.getTypeUser(login);
+
+            if(type == TipoUsuario.ADMIN)
+            {
+
+            }
         }
     }
 }
