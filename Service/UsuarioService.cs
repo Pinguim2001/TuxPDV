@@ -21,7 +21,7 @@ namespace TuxPDV.Service
             }
 
             if (!(usuarioDAO.getUser(_login, _password))){
-                MessageBox.Show("Usuário" + _login + " não encontrado ", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuário " + _login + " não encontrado ", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
