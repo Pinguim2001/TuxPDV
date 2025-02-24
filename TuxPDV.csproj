@@ -53,11 +53,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\UsuarioService.cs" />
     <Compile Include="Service\EmailService.cs" />
+    <Compile Include="View\frmCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmCaixa.Designer.cs">
+      <DependentUpon>frmCaixa.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmEsqueceuSenha.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\frmEsqueceuSenha.Designer.cs">
       <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmHomeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmHomeAdmin.Designer.cs">
+      <DependentUpon>frmHomeAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmLogin.cs">
       <SubType>Form</SubType>
@@ -80,8 +98,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\frmCaixa.resx">
+      <DependentUpon>frmCaixa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmEsqueceuSenha.resx">
       <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmHomeAdmin.resx">
+      <DependentUpon>frmHomeAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
