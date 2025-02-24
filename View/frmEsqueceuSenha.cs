@@ -88,12 +88,17 @@ namespace TuxPDV.View
                 return;
             }
 
+            frmResetSenha reset = new frmResetSenha();
+            reset.Show();
+            this.Close();
 
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+            this.Close();
         }
     }
 }

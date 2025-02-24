@@ -26,5 +26,12 @@ namespace TuxPDV.View
             }
 
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
     }
 }

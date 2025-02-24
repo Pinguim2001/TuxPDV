@@ -24,6 +24,7 @@ namespace TuxPDV.View
         {
             frmEsqueceuSenha esqueceuSenha = new frmEsqueceuSenha();
             esqueceuSenha.Show();
+            this.Close();
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -47,7 +48,14 @@ namespace TuxPDV.View
 
             if(type == TipoUsuario.ADMIN)
             {
+                frmHomeAdmin homeAdmin = new frmHomeAdmin();
+                homeAdmin.Show();
+                this.Close();
+            }
 
+            if(type == TipoUsuario.FUNCIONARIO)
+            {
+                this.Close();
             }
         }
     }

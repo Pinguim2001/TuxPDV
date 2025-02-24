@@ -34,13 +34,14 @@
             this.txtConfirNovaSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSalvarNovaSenha = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 16F);
-            this.label1.Location = new System.Drawing.Point(86, 57);
+            this.label1.Location = new System.Drawing.Point(390, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(196, 26);
             this.label1.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             // txtNovaSenha
             // 
-            this.txtNovaSenha.Location = new System.Drawing.Point(91, 100);
+            this.txtNovaSenha.Location = new System.Drawing.Point(369, 183);
             this.txtNovaSenha.Name = "txtNovaSenha";
             this.txtNovaSenha.PasswordChar = '*';
             this.txtNovaSenha.Size = new System.Drawing.Size(235, 20);
@@ -56,7 +57,7 @@
             // 
             // txtConfirNovaSenha
             // 
-            this.txtConfirNovaSenha.Location = new System.Drawing.Point(91, 212);
+            this.txtConfirNovaSenha.Location = new System.Drawing.Point(369, 298);
             this.txtConfirNovaSenha.Name = "txtConfirNovaSenha";
             this.txtConfirNovaSenha.PasswordChar = '*';
             this.txtConfirNovaSenha.Size = new System.Drawing.Size(235, 20);
@@ -66,7 +67,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 16F);
-            this.label2.Location = new System.Drawing.Point(86, 161);
+            this.label2.Location = new System.Drawing.Point(385, 260);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(201, 26);
             this.label2.TabIndex = 2;
@@ -74,19 +75,30 @@
             // 
             // btnSalvarNovaSenha
             // 
-            this.btnSalvarNovaSenha.Location = new System.Drawing.Point(624, 405);
+            this.btnSalvarNovaSenha.Location = new System.Drawing.Point(682, 440);
             this.btnSalvarNovaSenha.Name = "btnSalvarNovaSenha";
             this.btnSalvarNovaSenha.Size = new System.Drawing.Size(124, 33);
             this.btnSalvarNovaSenha.TabIndex = 4;
-            this.btnSalvarNovaSenha.Text = "Salvar";
+            this.btnSalvarNovaSenha.Text = "SALVAR";
             this.btnSalvarNovaSenha.UseVisualStyleBackColor = true;
             this.btnSalvarNovaSenha.Click += new System.EventHandler(this.btnSalvarNovaSenha_Click);
+            // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(822, 440);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(124, 33);
+            this.btnSair.TabIndex = 5;
+            this.btnSair.Text = "SAIR";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frmResetSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(958, 485);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnSalvarNovaSenha);
             this.Controls.Add(this.txtConfirNovaSenha);
             this.Controls.Add(this.label2);
@@ -107,5 +119,6 @@
         private System.Windows.Forms.TextBox txtConfirNovaSenha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSalvarNovaSenha;
+        private System.Windows.Forms.Button btnSair;
     }
 }

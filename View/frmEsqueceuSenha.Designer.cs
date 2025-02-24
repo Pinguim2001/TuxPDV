@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(310, 37);
+            this.label1.Location = new System.Drawing.Point(426, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 25);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(231, 86);
+            this.txtEmail.Location = new System.Drawing.Point(334, 158);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(328, 29);
             this.txtEmail.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(209, 208);
+            this.label2.Location = new System.Drawing.Point(310, 274);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(362, 25);
             this.label2.TabIndex = 2;
@@ -69,11 +69,11 @@
             // 
             // btnEnviarEmail
             // 
-            this.btnEnviarEmail.Location = new System.Drawing.Point(336, 156);
+            this.btnEnviarEmail.Location = new System.Drawing.Point(453, 226);
             this.btnEnviarEmail.Name = "btnEnviarEmail";
             this.btnEnviarEmail.Size = new System.Drawing.Size(94, 35);
             this.btnEnviarEmail.TabIndex = 3;
-            this.btnEnviarEmail.Text = "Enviar";
+            this.btnEnviarEmail.Text = "ENVIAR";
             this.btnEnviarEmail.UseVisualStyleBackColor = true;
             this.btnEnviarEmail.Click += new System.EventHandler(this.btnEnviarEmail_Click);
             // 
@@ -81,7 +81,7 @@
             // 
             this.lblTimer.AutoSize = true;
             this.lblTimer.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimer.Location = new System.Drawing.Point(330, 118);
+            this.lblTimer.Location = new System.Drawing.Point(500, 190);
             this.lblTimer.Name = "lblTimer";
             this.lblTimer.Size = new System.Drawing.Size(0, 20);
             this.lblTimer.TabIndex = 4;
@@ -89,28 +89,28 @@
             // txtCodRecup
             // 
             this.txtCodRecup.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodRecup.Location = new System.Drawing.Point(231, 260);
+            this.txtCodRecup.Location = new System.Drawing.Point(334, 331);
             this.txtCodRecup.Name = "txtCodRecup";
             this.txtCodRecup.Size = new System.Drawing.Size(328, 29);
             this.txtCodRecup.TabIndex = 5;
             // 
             // btnVerificaCode
             // 
-            this.btnVerificaCode.Location = new System.Drawing.Point(336, 317);
+            this.btnVerificaCode.Location = new System.Drawing.Point(453, 396);
             this.btnVerificaCode.Name = "btnVerificaCode";
             this.btnVerificaCode.Size = new System.Drawing.Size(94, 35);
             this.btnVerificaCode.TabIndex = 6;
-            this.btnVerificaCode.Text = "Verificar";
+            this.btnVerificaCode.Text = "VERIFICAR";
             this.btnVerificaCode.UseVisualStyleBackColor = true;
             this.btnVerificaCode.Click += new System.EventHandler(this.btnVerificaCode_Click);
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(661, 341);
+            this.btnVoltar.Location = new System.Drawing.Point(852, 438);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(94, 35);
             this.btnVoltar.TabIndex = 7;
-            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.Text = "VOLTAR";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 388);
+            this.ClientSize = new System.Drawing.Size(958, 485);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnVerificaCode);
             this.Controls.Add(this.txtCodRecup);
