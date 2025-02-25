@@ -87,7 +87,7 @@
             this.btnRelatorio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRelatorio.BackgroundImage")));
             this.btnRelatorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnRelatorio.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorio.Location = new System.Drawing.Point(139, 252);
+            this.btnRelatorio.Location = new System.Drawing.Point(281, 252);
             this.btnRelatorio.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Size = new System.Drawing.Size(144, 104);
@@ -100,9 +100,9 @@
             // btnUsuarios
             // 
             this.btnUsuarios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.BackgroundImage")));
-            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUsuarios.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.Location = new System.Drawing.Point(401, 252);
+            this.btnUsuarios.Location = new System.Drawing.Point(538, 252);
             this.btnUsuarios.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(144, 104);
